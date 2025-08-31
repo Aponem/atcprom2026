@@ -1,3 +1,98 @@
 @charset "UTF-8";
 /* CSS Document */
+body {
+ margin: 0;
+  font-family: 'Playfair Display', serif; /* Elegant font */
+  background: linear-gradient(135deg, #000000, #6f0000);
+  color: white;
+  text-align: center;
+}
+
+.title {
+    font-size: 3.9rem;
+    color: #940000;
+    text-shadow: 0 0 12px rgba(255, 215, 0, 0.8);
+    animation: fadeIn 2s ease-in;
+}
+
+
+/* Hero Section */
+.hero {
+  padding: 80px 20px;
+  animation: fadeIn 2s ease-in;
+}
+
+/* Tiger Logo Animation */
+#tiger-logo {
+  width: 190px;
+  margin-bottom: 20px;
+  animation: roar 2s ease-out;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in 1s forwards;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #FFD700, #fff, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+
+
+/* Buttons */
+.btn {
+  background: #FFD700;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: black;
+  color: #FFD700;
+  border: 2px solid #FFD700;
+}
+
+/* Video */
+video {
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.5);
+  max-width: 90%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes slideIn {
+  from {transform: translateY(-50px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes roar {
+  0% { transform: scale(1) rotate(0deg);}
+  20% { transform: scale(1.1) rotate(-5deg);}
+  40% { transform: scale(1.1) rotate(5deg);}
+  60% { transform: scale(1.2);}
+  80% { transform: scale(1.1);}
+  100% { transform: scale(1);}
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
 
